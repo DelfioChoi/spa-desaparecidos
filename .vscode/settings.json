@@ -1,0 +1,17 @@
+{
+  "eslint.options": {
+    "overrideConfigFile": ".eslintrc.cjs"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact", 
+    "typescript",
+    "typescriptreact",
+    "css",
+    "postcss"
+  ],
+  "css.lint.unknownAtRules": "ignore",
+  "files.associations": {
+    "*.css": "postcss"
+  }
+}
