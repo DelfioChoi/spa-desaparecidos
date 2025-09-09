@@ -2,9 +2,9 @@
 FROM node:18-alpine as build
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci
+RUN ls -la && npm ci --verbose
 COPY . .
-RUN npm run build
+RUN ls -la && npm run build
 
 # Serve with nginx
 FROM nginx:stable-alpine
